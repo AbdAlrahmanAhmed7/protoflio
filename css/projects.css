@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right,#080109,#21022b);
+    height: 100vh;
+    overflow-x: hidden;
+}
+#scroll-up{
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  right: -60px;
+  bottom: 30px;
+  background: #410ded;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: .7s;
+}
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+nav .logo, ul{
+    margin: 30px 120px;
+}
+nav .logo {
+    letter-spacing: 1px;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .logo span{
+    border-bottom: #70128f solid 5px;
+    color: #70128f;
+}
+nav li{
+    display: inline-block;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    transition: .7s;
+}
+nav .active{
+    border-bottom: #70128f solid 5px;
+    color: #70128f;
+}
+nav li:hover{
+    scale: 1.3;
+}
+.projects{
+    position: relative;
+    color: #ffffff;
+    height: 780px;
+  }
+  .side-title{
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-left: 123px;
+  }
+  .projects img{
+    width: 450px;
+    border-radius: 10px 10px 0 0;
+  }
+  .projects .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .projects .title h1{
+    margin-top: 50px;
+  }
+  .projects .title .second{
+    color: #70128f;
+    border-bottom: #70128f solid 5px;
+  }
+  .projects .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10% 120px;
+  }
+  .projects .cards{
+    background-color: #353141;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .projects .text-contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .projects .cards a{
+    color: #5a25df;
+    text-decoration: none;
+    margin-right: 28px;
+  }
+  .projects .cards h3{
+    margin-left: 40px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .projects .all-projects{
+    background: none;
+    color: #5a25df;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: .7s;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    left: 46%;
+    bottom: 40px;
+  }
+  .side-title .second{
+    position: absolute;
+  }
