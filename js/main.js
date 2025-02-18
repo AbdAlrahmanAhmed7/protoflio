@@ -61,3 +61,12 @@ window.onload = function(){
     container2.style.opacity = '1';
     container2.style.right = '110px';
 }
+let txt = document.getElementById('txt');
+
+if(localStorage.length > 0){
+    txt.value = localStorage.getItem('txt');
+}
+
+txt.onkeyup = function(){
+    localStorage.setItem('txt',txt.value);
+}
