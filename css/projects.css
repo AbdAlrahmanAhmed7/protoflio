@@ -131,3 +131,43 @@ nav li:hover{
   .side-title .second{
     position: absolute;
   }
+  .main {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.cards {
+    min-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-contant {
+    margin-top: 10px;
+}
+
+.text-contant h3 {
+    font-size: 20px;
+}
+
+.text-contant a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

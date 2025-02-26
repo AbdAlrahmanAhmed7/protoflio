@@ -325,7 +325,10 @@ nav li:hover{
   color: #ffffff;
   height: 780px;
   margin-top: 450px;
-  background-color: #2020bf3c;
+  background-image: linear-gradient(#2020bf83,#572289) ,url(footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .projects img{
   width: 450px;
