@@ -2,7 +2,10 @@ let skills = document.getElementById('skills');
 let works = document.getElementById('works');
 let Contact = document.getElementById('Contact');
 let scrollUp = document.getElementById('scroll-up');
-
+let logo = document.querySelector('.logo');
+let nav = document.getElementById('nav-scroll')
+let container = document.querySelector('.left-sec');
+let container2 = document.querySelector('.right-sec');
 skills.onclick = function(){
     scroll({
         top:602,
@@ -32,5 +35,27 @@ scrollUp.onclick = function(){
     scroll({
         top:0,
         behavior:"smooth",
+    })
+}
+window.onload = function(){
+    anime({
+        targets: logo,
+        opacity: 1,
+        translateX:0,
+    })
+    anime({
+        targets: nav,
+        opacity: 1,
+        translateY:0,
+    })
+    anime({
+        targets: container2,
+        opacity: 1,
+        translateX: -150,
+    })
+    anime({
+        targets: container,
+        opacity: 1,
+        translateX: 0,
     })
 }

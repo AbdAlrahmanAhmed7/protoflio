@@ -38,6 +38,8 @@ nav .logo {
   position: relative;
     letter-spacing: 1px;
     transition: 2s;
+    opacity: 0;
+    transform: translateX(-410px);
 }
 nav li a{
     color: #fff;
@@ -47,6 +49,11 @@ nav li a{
 nav .logo span{
     border-bottom: #70128f solid 5px;
     color: #70128f;
+}
+nav ul{
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 2s;
 }
 nav li{
     display: inline-block;
@@ -97,9 +104,16 @@ nav li:hover{
     background-color: #70128f;
     cursor: pointer;
 }
+.left-sec{
+  transform: translateX(-650px);
+  opacity: 0;
+  transition: 2s;
+}
 .right-sec{
     position: relative;
-    margin-right: 120px;
+    transform: translateX(350px);
+    opacity: 0;
+    transition: 2s;
 } 
 .bubble {
   position: absolute;
