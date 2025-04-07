@@ -30,6 +30,20 @@ window.onscroll = function(){
     }else{
         scrollUp.style.right = '-60px'
     }
+    if(this.scrollY >= 400){
+        anime({
+            targets: ".card",
+            opacity: 1,
+            translateY: 0,
+        })
+    }
+    if(this.scrollY >= 350){
+        anime({
+            targets: "#anime-title",
+            opacity: 1,
+            translateY: 0,
+        })
+    }
 }
 scrollUp.onclick = function(){
     scroll({
