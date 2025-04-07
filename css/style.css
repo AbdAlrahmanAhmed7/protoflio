@@ -304,74 +304,89 @@ nav li:hover{
   transform: rotateY(180deg); 
   font-size: 15px;
 }
-.projects{
+.projects {
+  margin-top: 300px;
   position: relative;
   color: #ffffff;
-  height: 780px;
-  margin-top: 450px;
-  background-image: linear-gradient(#2020bf83,#572289) ,url(footer.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 100px 20px;
+  background: linear-gradient(#2020bf83, #572289), url(footer.png) center/cover no-repeat;
+  text-align: center;
 }
-.projects img{
-  width: 450px;
-  border-radius: 10px 10px 0 0;
+.projects .title h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
 }
-.projects .title{
+
+.projects .second {
+  color: #5a25df;
+}
+
+.projects .main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 30px;
 }
-.projects .title h1{
-  margin-top: 50px;
-}
-.projects .title .second{
-  color: #5a25df;
-}
-.projects .main{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10% 120px;
-}
-.projects .cards{
+
+.projects .card {
   background-color: #353141;
-  height: 350px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
-.projects .text-contant{
+
+.projects .card:hover {
+  transform: translateY(-10px);
+}
+
+.projects .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-content {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  margin-top: 35px;
 }
-.projects .cards a{
+
+.text-content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.text-content a {
   color: #5a25df;
   text-decoration: none;
-  margin-right: 28px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
-.projects .cards h3{
-  margin-left: 40px;
-  font-size: 25px;
-  letter-spacing: 1px;
+
+.text-content a:hover {
+  color: #7d56ff;
 }
-.projects .all-projects{
-  background: none;
+
+.all-projects {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 20px;
   color: #5a25df;
-  padding: 15px;
-  text-transform: uppercase;
-  transition: .7s;
-  border-radius: 5px;
+  background: transparent;
+  border: 2px solid #5a25df;
+  border-radius: 8px;
   text-decoration: none;
-  position: relative;
-  left: 46%;
-  bottom: 40px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
-ul {
-  list-style: none;
+
+.all-projects:hover {
+  background: #5a25df;
+  color: #fff;
 }
 
 .example-2 {
@@ -438,6 +453,9 @@ ul {
 }
 .example-2 .icon-content a:hover .filled {
   height: 100%;
+}
+.example-2 li {
+  list-style: none;
 }
 
 .example-2 .icon-content a[data-social="linkedin"] .filled,

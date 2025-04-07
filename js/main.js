@@ -44,6 +44,7 @@ window.onscroll = function(){
             translateY: 0,
         })
     }
+    
 }
 scrollUp.onclick = function(){
     scroll({
